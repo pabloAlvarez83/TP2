@@ -1,17 +1,3 @@
-import express from "express";
-const app = express();
-
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*"); // Permite todas las solicitudes de cualquier origen
-  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE"); // Permite los métodos GET, POST, PUT y DELETE
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  ); // Permite los encabezados especificados
-
-  next();
-});
-
 fetch("productos.json")
   .then((respuesta) => respuesta.json())
   .then((datos) => localStorage.setItem("productos", JSON.stringify(datos)));
@@ -23,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (datosProductos) {
     datosProductos.productos.forEach((producto) => {
-      // 1- crear uhn div para cada provincia
+      // 1- crear uhn div para cada producto
       const gridItem = document.createElement("div");
       // 2 agregar la clase nombre al div que contiene el nombre
       gridItem.classList.add("grid-item");
