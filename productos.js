@@ -1,3 +1,17 @@
+import express from "express";
+const app = express();
+
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); // Permite todas las solicitudes de cualquier origen
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE"); // Permite los métodos GET, POST, PUT y DELETE
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  ); // Permite los encabezados especificados
+
+  next();
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const detalleProducto = document.getElementById("detalle-producto");
 
