@@ -1,0 +1,26 @@
+{
+  "cantidad": 3,
+  "inicio": 0,
+  "parametros": {},
+  "productos": [
+    {
+      "centroide": { "lat": -26.8753965086829, "lon": -54.6516966230371 },
+      "id": "01",
+      "nombre": "Shampoo1",
+      "imagen": "img/s1.jpg"
+    },
+    {
+      "centroide": { "lat": -33.7577257449137, "lon": -66.0281298195836 },
+      "id": "02",
+      "nombre": "Shampoo2",
+      "imagen": "img/s2.jpg"
+    },
+    {
+      "centroide": { "lat": -33.7577257449137, "lon": -66.0281298195836 },
+      "id": "03",
+      "nombre": "Shampoo3",
+      "imagen": "img/s3.jpg"
+    }
+  ],
+  "total": 3
+}
