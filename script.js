@@ -5,7 +5,6 @@ fetch("productos.json")
 document.addEventListener("DOMContentLoaded", () => {
   const gridProductos = document.getElementById("grid-productos");
   const datosProductos = JSON.parse(localStorage.getItem("productos"));
-  console.log(datosProductos);
 
   if (datosProductos) {
     datosProductos.productos.forEach((producto) => {
