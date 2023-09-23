@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     contenedorDetallesProducto.innerHTML = `
       <h2>${productoSeleccionado.nombre}</h2>
       <p>ID: ${productoSeleccionado.id}</p>
+      <img src="${productoSeleccionado.imagen}" alt="${productoSeleccionado.alt}" />
       `;
     //agregar a pagina principal
     detalleProducto.appendChild(contenedorDetallesProducto);

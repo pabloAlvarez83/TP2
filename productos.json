@@ -1,6 +1,3 @@
-
-
-
 {
   "cantidad": 3,
   "inicio": 0,
@@ -9,17 +6,20 @@
     {
       "id": "01",
       "nombre": "Shampoo1",
-      "imagen": "img/s1.jpg"
+      "imagen": "img/s1.jpg",
+      "alt": "Descripcion shampoo1"
     },
     {
       "id": "02",
       "nombre": "Shampoo2",
-      "imagen": "img/s2.jpg"
+      "imagen": "img/s2.jpg",
+      "alt": "Descripcion shampoo2"
     },
     {
       "id": "03",
       "nombre": "Shampoo3",
-      "imagen": "img/s3.jpg"
+      "imagen": "img/s3.jpg",
+      "alt": "Descripcion shampoo3"
     }
   ],
   "total": 3
