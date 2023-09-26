@@ -68,7 +68,7 @@ h3 {
 
 .grid-item {
   background-color: var(--colorFondoItems);
-  color: var(--colorFuente);
+  color: var(--colorSubTitulo);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -76,12 +76,11 @@ h3 {
   text-align: center;
   font-size: 1.2em;
   box-shadow: 1px 1px 5px #000;
-
   transition: 0.5s;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   &:hover {
-    color: var(--colorFuente);
+    color: var(--colorTitulo);
     box-shadow: 2px 2px 4px var(--colorBotonesHover);
     transition: 0.5s;
     filter: none;
