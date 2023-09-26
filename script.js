@@ -5,6 +5,7 @@ fetch("productos.json")
 document.addEventListener("DOMContentLoaded", () => {
   const gridProductos = document.getElementById("grid-productos");
   const datosProductos = JSON.parse(localStorage.getItem("productos"));
+ 
 
   if (datosProductos) {
     datosProductos.productos.forEach((producto) => {
@@ -13,12 +14,23 @@ document.addEventListener("DOMContentLoaded", () => {
       // 2 agregar la clase nombre al div que contiene el nombre
       gridItem.classList.add("grid-item");
       //3- agregar etiqueta h4 con el texto del titulo
-      gridItem.innerHTML = `<h4>${producto.nombre}</h4>`;
-      gridItem.addEventListener("click", () =>
-        mostrarDetallesProductos(producto)
-      );
+      gridItem.innerHTML = `
+      <h4>${producto.nombre}</h4>
+      <img src=${producto.imagen} id="imagen" alt="${producto.alt}" />
+      
+      `;
+      
+      // gridItem.addEventListener("click", () =>
+      //   mostrarDetallesProductos(producto)
+      // );
 
       gridProductos.appendChild(gridItem);
+      let ver = document.createElement('a');
+      ver.innerText= "Ver Producto";
+      gridItem.append(ver);
+      ver.className= "ver";
+      ver.addEventListener("click", ()=>mostrarDetallesProductos(producto) );
+
     });
   }
 });

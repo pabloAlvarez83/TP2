@@ -18,9 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const contenedorDetallesProducto = document.createElement("div");
     contenedorDetallesProducto.classList.add("detalles-producto");
     contenedorDetallesProducto.innerHTML = `
-      <h2>${productoSeleccionado.nombre}</h2>
-      <p>ID: ${productoSeleccionado.id}</p>
-      <img src="${productoSeleccionado.imagen}" alt="${productoSeleccionado.alt}" />
+      <h2 id="nombre">${productoSeleccionado.nombre}</h2>
+      <img id="imagen-producto" src="${productoSeleccionado.imagen}" alt="${productoSeleccionado.alt}" />
+      <p id="descripcion">${productoSeleccionado.descripcion}</p>
+      <p id="valor">Valor: ${productoSeleccionado.valor}</p>
+      <a href=index.html>Volver a la página principal</a>
       `;
     //agregar a pagina principal
     detalleProducto.appendChild(contenedorDetallesProducto);
