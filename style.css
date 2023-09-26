@@ -3,7 +3,8 @@
 :root {
   --colorFuente: #c219fd;
   --colorFondoItems: #ffffff;
-  --colorTitulo: #da1eae;
+  --colorTitulo: #f0f0f0;
+  --colorSubTitulo: #8b8b8b;
   --colorBackground: linear-gradient(#332b47, #8f78c6);
   --colorBotonesHover: #afd1d8;
   --colorDescripcion: #2d2d2d;
@@ -35,15 +36,18 @@ header {
 }
 
 h1 {
-  color: var(--colorFuente);
+  color: var(--colorTitulo);
   font-size: 2rem;
   text-align: center;
   font-style: italic;
+  padding-top: 15px;
+  text-shadow: 2px 2px black;
 }
 
 h3 {
-  color: var(--colorFuente);
+  color: var(--colorSubTitulo);
   text-align: center;
+  text-shadow: 2px 2px black;
 }
 
 .header-titulos {
