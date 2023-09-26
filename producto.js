@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const idProducto = urlParams.get("id");
 
-  // obtenemos los datos de las provincias desde el localstorage
+  // obtenemos los datos de los productos desde el localstorage
   const datosProductos = JSON.parse(localStorage.getItem("productos"));
 
   //buscamos los productos por id
