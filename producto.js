@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
       <img id="imagen-producto" src="${productoSeleccionado.imagen}" alt="${productoSeleccionado.alt}" />
       <p id="descripcion">${productoSeleccionado.descripcion}</p>
       <p id="valor">Valor: ${productoSeleccionado.valor}</p>
+      <div id="puntuacion"> ${productoSeleccionado.puntuacion}</div>
       <a href=index.html>Volver a la página principal</a>
+      
       `;
     //agregar a pagina principal
     detalleProducto.appendChild(contenedorDetallesProducto);

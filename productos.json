@@ -9,7 +9,8 @@
       "imagen": "img/calendulaymanzanilla.jpg",
       "alt": "Caléndula y Manzanilla",
       "descripcion": "Un jabón suave y sanador con flores de caléndula y extractos botánicos, sin aceite esencial. La solución ideal para pieles y cueros cabelludos sensibles, la piel delicada de tu bebé o pelos rubios, teñidos o con reflejos.",
-      "valor": "$2.000.-"
+      "valor": "$2.000.-",
+      "puntuacion": "⭐⭐⭐⭐⭐"
     },
     {
       "id": "02",
@@ -17,7 +18,8 @@
       "imagen": "img/carbonactivado.jpg",
       "alt": "Carbon activado",
       "descripcion": "Limpia y desintoxica profundamente la piel y el pelo. El carbón activado se conoce desde la antigüedad como desintoxicante por su capacidad de atraer y retener sustancias nocivas.",
-      "valor": "$2.000.-"
+      "valor": "$2.000.-",
+      "puntuacion": "⭐⭐⭐⭐⭐"
     },
     {
       "id": "03",
@@ -25,7 +27,8 @@
       "imagen": "img/chai.jpg",
       "alt": "Chai",
       "descripcion": "Rico, dulce y cálido con aceites esenciales de canela, clavo de olor, cardamomo, pimienta negra, naranja y un toque de benjui. Una buena opción para estimular circulación, para crecimiento del pelo y para agregar brillo al pelo oscuro.",
-      "valor": "$2.000.-"
+      "valor": "$2.000.-",
+      "puntuacion": "⭐⭐⭐⭐⭐"
     },
     {
       "id": "04",
@@ -33,7 +36,8 @@
       "imagen": "img/cincocitricos.jpg",
       "alt": "Cinco Cítricos",
       "descripcion": "Un jabón refrescante con muchas burbujas. Con propiedades desodorantes y neutralizantes es perfecto para la cocina o el baño! Como shampoo, los aceites esenciales cítricos equilibran aceites, promueven brillo y estimulan la circulación sanguínea para promover el crecimiento del pelo.",
-      "valor": "$2.000.-"
+      "valor": "$2.000.-",
+      "puntuacion": "⭐⭐⭐⭐⭐"
     },
     {
       "id": "05",
@@ -41,7 +45,8 @@
       "imagen": "img/eucalipto.jpg",
       "alt": "Eucalipto",
       "descripcion": "Calma, desinfecta y desinflama condiciones de la piel como acné, lastimaduras e infecciones. También podrías utilizarlo una vez por semana para promover un cuero cabelludo sano y prevenir caspa, adelgazamiento del cabello, liendres y piojos.",
-      "valor": "$2.000.-"
+      "valor": "$2.000.-",
+      "puntuacion": "⭐⭐⭐⭐⭐"
     },
     {
       "id": "06",
@@ -49,7 +54,8 @@
       "imagen": "img/geraniorosa.jpg",
       "alt": "Geranio Rosa",
       "descripcion": "Un mimo para la piel y el alma con aceite esencial de Geranio Rosa y pétalos de Rosa.",
-      "valor": "$2.000.-"
+      "valor": "$2.000.-",
+      "puntuacion": "⭐⭐⭐⭐⭐"
     },
     {
       "id": "07",
@@ -57,7 +63,8 @@
       "imagen": "img/lavanda.jpg",
       "alt": "Lavanda",
       "descripcion": "Relájate y mima a tu piel y pelo! Un jabón suave con aceite esencial de lavandín y flores de lavanda. Apto para bebés y todo tipo de piel/pelo.",
-      "valor": "$2.000.-"
+      "valor": "$2.000.-",
+      "puntuacion": "⭐⭐⭐⭐⭐"
     },
     {
       "id": "08",
@@ -65,7 +72,8 @@
       "imagen": "img/naranjaypatchouli.jpg",
       "alt": "Naranja y Patchouli",
       "descripcion": "Un blend ideal de naranja dulce y alegre y patchouli terrestre.",
-      "valor": "$2.000.-"
+      "valor": "$2.000.-",
+      "puntuacion": "⭐⭐⭐⭐⭐"
     }
   ],
   "total": 8
