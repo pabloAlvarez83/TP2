@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap");
 
 :root {
-  --colorFuente: #c219fd;
+  --colorFuente: #fffadd;
   --colorFondoItems: #ffffff;
-  --colorTitulo: #f0f0f0;
+  --colorTitulo: #a2c579;
   --colorSubTitulo: #8b8b8b;
-  --colorBackground: linear-gradient(#332b47, #8f78c6);
-  --colorBotonesHover: #afd1d8;
+  --colorBackground: linear-gradient(#332b47, #a5b381);
+  --colorBotonesHover: #016a70;
   --colorDescripcion: #2d2d2d;
   --fuenteMedia: 2rem;
   --fuenteBaja: 1rem;
@@ -28,11 +28,13 @@ header {
 }
 
 #imagen-carrusel {
-  height: 130px;
+  height: 140%;
+  background-position: center;
+  background-color: #332b47;
 }
 
 .carousel-item {
-  transition: transform 2s ease, opacity 0.5s ease-out;
+  transition: transform 1s ease, opacity 0.5s ease-out;
 }
 
 h1 {
@@ -41,19 +43,16 @@ h1 {
   text-align: center;
   font-style: italic;
   padding-top: 15px;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px #000;
 }
 
 h3 {
   color: var(--colorSubTitulo);
   text-align: center;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px #000;
 }
 
 .header-titulos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(to left, transparent, #fff, transparent) 1;
   height: 128px;
@@ -76,7 +75,6 @@ h3 {
   cursor: pointer;
   text-align: center;
   font-size: 1.2em;
-  /* box-shadow: 2px 2px 0px rgba(231, 230, 139, 0.8); */
   box-shadow: 1px 1px 5px #000;
 
   transition: 0.5s;
@@ -84,11 +82,7 @@ h3 {
   filter: grayscale(1);
   &:hover {
     color: var(--colorFuente);
-    /* box-shadow:
-     1px 1px 2px #fff,  
-     2px 1.5px 2px var(--colorTitulo);
-    3px 2.5px #fff;  */
-    box-shadow: 2px 2px 4px var(--colorFondoItems);
+    box-shadow: 2px 2px 4px var(--colorBotonesHover);
     transition: 0.5s;
     filter: none;
   }
@@ -151,11 +145,10 @@ a {
   -moz-appearance: button;
   appearance: button;
   text-decoration: none;
-  border: 1px solid var(--colorFuente);
   border-radius: 10px;
   padding: 15px;
   background-color: var(--colorFondoItems);
-  color: var(--colorFuente);
+  color: var(--colorSubTitulo);
   transition: 1s;
   border: none;
   box-shadow: 2px 2px 4px #000;
