@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     contenedorDetallesProducto.classList.add("detalles-producto");
     contenedorDetallesProducto.innerHTML = `
       <h2 id="nombre">${productoSeleccionado.nombre}</h2>
-      <img id="imagen-producto" src="${productoSeleccionado.imagen}" alt="${productoSeleccionado.alt}" />
+      <img id="imagen-producto" class="animacion" src="${productoSeleccionado.imagen}" alt="${productoSeleccionado.alt}" />
       <p id="descripcion">${productoSeleccionado.descripcion}</p>
       <p id="valor">Valor: ${productoSeleccionado.valor}</p>
       <div id="puntuacion"> ${productoSeleccionado.puntuacion}</div>

@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 
 :root {
   --colorFuente: #fffadd;
   --colorFondoItems: #ffffff;
-  --colorTitulo: #a2c579;
-  --colorSubTitulo: #8b8b8b;
+  --colorSubTitulo: #deb027;
   --colorBackground: linear-gradient(#332b47, #a5b381);
   --colorBotonesHover: #016a70;
-  --colorDescripcion: #2d2d2d;
+  --colorDescripcion: #faebd7;
+  --colorValor: rgba(45, 45, 45, 0.8);
   --fuenteMedia: 2rem;
   --fuenteBaja: 1rem;
 }
@@ -38,18 +41,33 @@ header {
 }
 
 h1 {
-  color: var(--colorTitulo);
-  font-size: 2rem;
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  font-weight: bold;
   text-align: center;
   font-style: italic;
-  padding-top: 15px;
-  text-shadow: 2px 2px #000;
+  padding-top: 10px;
+  background: var(--colorFondoItems);
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+text-shadow: 0px 3px 3px rgba(255,255,255,.3),0px -2px 1px rgba(0,0,0,.2);
+}
+
+.titulo-detalles {
+  margin: 0;
+  display: flex;
+  height: 99px;
+  justify-content: center;
+  align-items: center;
 }
 
 h3 {
   color: var(--colorSubTitulo);
   text-align: center;
-  text-shadow: 2px 2px #000;
+  text-shadow: 2px 2px #000000;
+  font-family: 'Satisfy', cursive;
 }
 
 .header-titulos {
@@ -80,7 +98,7 @@ h3 {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   &:hover {
-    color: var(--colorTitulo);
+    color: var(--colorSubTitulo);
     box-shadow: 2px 2px 4px var(--colorBotonesHover);
     transition: 0.5s;
     filter: none;
@@ -97,6 +115,7 @@ h3 {
   font-size: 1.5rem;
   padding: 0 20px;
   color: var(--colorDescripcion);
+  text-shadow: 1px 1px #000;
 }
 
 h4 {
@@ -120,8 +139,14 @@ h4 {
   margin: auto;
   height: 250px;
   width: 250px;
+  box-shadow: 2px 2px 5px #000;
+  border: 2px solid var(--colorDescripcion);
   border-radius: 5px;
-  box-shadow: 2px 2px 4px #000;
+  animation-name: rotar;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
 }
 
 #descripcion {
@@ -132,6 +157,48 @@ h4 {
 
 #valor {
   font-size: 1.5em;
+  font-style: italic;
+  border: 1px solid var(--colorDescripcion);
+  border-radius: 5px;
+  border-image: linear-gradient(to bottom, transparent, var(--colorDescripcion))1;
+  padding: 8px;
+  color: var(--colorValor);
+}
+
+/* .animacion {
+  border: 2px solid var(--colorDescripcion);
+  border-radius: 5px;
+  animation-name: rotar;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+} */
+
+@keyframes rotar{
+  
+ 
+
+  0%{
+    border-image: linear-gradient(0deg ,transparent , var(--colorDescripcion) ) 1;
+  }
+
+  25%{
+    border-image: linear-gradient(90deg ,transparent , var(--colorDescripcion) ) 1;
+  }
+
+  50%{
+    border-image: linear-gradient(180deg ,transparent , var(--colorDescripcion) ) 1;
+  }
+
+  75%{
+    border-image: linear-gradient(240deg ,transparent , var(--colorDescripcion)) 1;
+  }
+
+  100%{
+    border-image: linear-gradient(360deg ,transparent , #fff ) 1;
+  }
+
 }
 
 #puntuacion {
@@ -155,7 +222,6 @@ a {
     color: var(--colorFondoItems);
     background-color: var(--colorBotonesHover);
     transition: 1s;
-    /* box-shadow: 1px 1px  var(--colorBackgrund); */
   }
 }
 
@@ -163,10 +229,11 @@ a {
   padding: 5px 10px;
   margin-top: 15px;
   font-size: 1rem;
+  color: #808080;
 }
 
 footer {
-  color: var(--colorSubTitulo);
+  color: var(--colorFondoItems);
   text-shadow: 1px 1px #000;
   font-size: 1rem;
   text-align: center;
