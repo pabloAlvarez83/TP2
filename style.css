@@ -165,15 +165,6 @@ h4 {
   color: var(--colorValor);
 }
 
-/* .animacion {
-  border: 2px solid var(--colorDescripcion);
-  border-radius: 5px;
-  animation-name: rotar;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-timing-function: ease-in;
-} */
 
 @keyframes rotar{
   
