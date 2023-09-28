@@ -218,12 +218,41 @@ a {
   transition: 1s;
   border: none;
   box-shadow: 2px 2px 4px #000;
+
+
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  
   &:hover {
     color: var(--colorFondoItems);
     background-color: var(--colorBotonesHover);
     transition: 1s;
   }
 }
+
+
+a::after {
+  content: "";
+  background: var(--colorBotonesHover); 
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: grid;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+a:hover::after {
+  transition: all 0.3s ease-out;
+  transform: skewX(-45deg) scale(1, 1);
+}
+
+
 
 .ver {
   padding: 5px 10px;
