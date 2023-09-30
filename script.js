@@ -5,7 +5,6 @@ fetch("productos.json")
 document.addEventListener("DOMContentLoaded", () => {
   const gridProductos = document.getElementById("grid-productos");
   const datosProductos = JSON.parse(localStorage.getItem("productos"));
- 
 
   if (datosProductos) {
     datosProductos.productos.forEach((producto) => {
@@ -15,25 +14,23 @@ document.addEventListener("DOMContentLoaded", () => {
       gridItem.classList.add("grid-item");
       // 3- agregar etiqueta h4 con el texto del titulo e imagen
       gridItem.innerHTML = `
-      <h4>${producto.nombre}</h4>
+      <h4>${producto.descripcion}</h4>
       <img src=${producto.imagen} id="imagen" alt="${producto.alt}" />
-      
       `;
-      
-      // Esto hace que seleccione todo el div
+
+      // Esto para que se seleccione todo el div
       // gridItem.addEventListener("click", () =>
       //   mostrarDetallesProductos(producto)
       // );
 
       gridProductos.appendChild(gridItem);
 
-     //Esto hace que se seleccione solo el boton dentro del div:
-      let ver = document.createElement('a');
-      ver.innerText= "Ver Producto";
+      //Esto hace que se seleccione solo el boton dentro del div:
+      let ver = document.createElement("a");
+      ver.innerText = "Ver Producto";
       gridItem.append(ver);
-      ver.className= "ver";
-      ver.addEventListener("click", ()=>mostrarDetallesProductos(producto) );
-
+      ver.className = "ver";
+      ver.addEventListener("click", () => mostrarDetallesProductos(producto));
     });
   }
 });
